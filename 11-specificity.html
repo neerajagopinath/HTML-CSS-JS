@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Specificity in CSS</title>
+        <style>
+            header.navigation p {
+                color: blue;
+            }
+            p.blurb {
+                color: red;
+            }
+            p {
+                color: green !important; /*avoid using this*/
+            }
+        </style>
+    </head>
+    <body>
+        <header class="navigation">
+        <p class="blurb">Think of specificity as a hierarchy that determines which style declaration is 
+           ultimately applied to an element.</p>
+        </header>
+    </body>
+</html>
